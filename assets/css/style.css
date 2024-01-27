@@ -1,0 +1,56 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+/* Asterisk wildcard selector to override default styles added by the browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Header */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image:url(../images/banner.avif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.logo {
+    font-size: xx-large;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+}
+/* navlinks */
+.navlinks {
+    flex: 1;
+    text-align: right;
+}
+.navlinks ul li {
+    list-style: none;
+    display: -webkit-inline-flex;
+    padding: 8px 12px;
+    position: relative;
+}
+.navlinks ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+.navlinks ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f65555;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.navlinks ul li:hover::after{
+    width: 100%;
+}
