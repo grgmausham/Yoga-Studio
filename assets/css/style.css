@@ -11,14 +11,17 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background: url(../images/banner.avif) no-repeat center center/cover;
+    background-image: url(../images/banner.avif);
+    background-position: center;
+    background-size: cover;
     position: relative;
 }
 .logo {
-    font-size: xx-large;
+    font-size: 230%;
     color: rgb(62, 110, 153);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    box-shadow: 0 2px 2px #3a3a3a;
+    padding-left: 60px;
+    padding-top: 20px;
 }
 nav {
     display: flex;
@@ -89,16 +92,22 @@ nav {
     background: #f44336;
     transition: 0.8s;
 }
-nav .fa {
+
+
+
+nav .fa-solid fa-bars{
+    display: none;
+}
+nav .fa-solid fa-xmark {
     display: none;
 }
 
 
 
 /* media querries for smaller devices */
-@media(mix-width: 768px) {
+@media(mix-width: 700px) {
     .text-box h1 {
-        font-size: 23px;
+        font-size: 20px;
     }
     .navlinks ul li {
         display: block;
@@ -112,13 +121,15 @@ nav .fa {
         right: 0;
         text-align: left;
         z-index: 2;
-        color: #fff;
     }
     nav .fa {
         display: block;
-        margin: 10px;
         color: #fff;
-        cursor: pointer;
+        margin: 10px;
         font-size: 22px;
+        cursor: pointer;
+    }
+    .navlinks ul {
+        padding: 30px;
     }
 }
