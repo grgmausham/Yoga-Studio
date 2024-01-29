@@ -10,7 +10,7 @@
     <section class="header">
         <h1 class="logo">Yoga Studio</h1>
         <nav>
-            <div class="navlinks">
+            <div id="navlinks">
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -19,6 +19,7 @@
                 </ul>
               
             </div>
+            <div id="menubtn"><i class="fa-solid fa-ellipsis-vertical" id="menu"></i></div>
         </nav>
         <div class="text-box">
         <h1>The Yoga Studio</h1>
@@ -32,5 +33,19 @@
     </section>
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+    <script>
+        var menubtn = document.getElementById("menubtn")
+        var navlinks = document.getElementById("navlinks")
+        var menu = document.getElementById("menu")
+
+        menubtn.onclick = function(){
+            if(navlinks.style.right=="-230px"){
+                navlinks.style.right= "0";
+            }
+            else{
+                navlinks.style.right = "-230px"
+            }
+        }
+    </script>
 </body>
 </html>

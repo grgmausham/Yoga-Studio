@@ -28,23 +28,29 @@ nav {
     justify-content: space-between;
 }
 /* navlinks */
-.navlinks {
+#navlinks {
     flex: 1;
-    text-align: right;
-    display: flex;
+    text-align: left;
+    width: 230px;
+    height: 100vh;
+    position: fixed;
+    right: -230px;
+    top: 20px;
+    z-index: 2;
+    background: transparent;
+    transition: 0.5s;
 }
-.navlinks ul li {
+#navlinks ul li {
     list-style: none;
-    display: inline-block;
     padding: 8px 12px;
-    position: relative;
+    margin: 20px 10px;
 }
-.navlinks ul li a {
-    color: rgb(133, 113, 113);
+#navlinks ul li a {
+    color: rgb(25, 69, 104);
     text-decoration: none;
     font-size: 13px;
 }
-.navlinks ul li::after {
+#navlinks ul li::after {
     content: '';
     width: 0%;
     height: 2px;
@@ -53,8 +59,19 @@ nav {
     margin: auto;
     transition: 0.4s;
 }
+#menubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 60px;
+    top: 20px;
+    z-index: 3;
+    cursor: pointer;
+    font-size: 180%;
+}
 /* hover effect for links*/
-.navlinks ul li:hover::after {
+#navlinks ul li:hover::after {
     width: 100%;
 }
 /*content*/
@@ -93,21 +110,24 @@ nav {
     transition: 0.8s;
 }
 /* media querries for smaller devices */
-@media(mix-width: 700px) {
+@media(mix-width: 768px) {
     .text-box h1 {
         font-size: 20px;
     }
-    .navlinks ul li {
+    #navlinks ul li {
         display: block;
     }
-    .navlinks {
+    #navlinks {
         position: absolute;
         background: #f44336;
         height: 100vh;
-        width: 200px;
-        top: 0;
+        width: 100px;
+        top: 20px;
         right: 0;
         text-align: left;
         z-index: 2;
+    }
+    #menu {
+        left: 25px;
     }
 }
