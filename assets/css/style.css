@@ -93,7 +93,7 @@ nav {
     color: rgb(125, 105, 105);
 }
 /*hero button*/
-.hero-btn {
+.hero-btn{
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -110,24 +110,26 @@ nav {
     transition: 0.8s;
 }
 /* media querries for smaller devices */
-@media(mix-width: 768px) {
+@media (max-width: 770px) {
     .text-box h1 {
         font-size: 20px;
     }
     #navlinks ul li {
         display: block;
     }
-    #navlinks {
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 100px;
-        top: 20px;
-        right: 0;
-        text-align: left;
-        z-index: 2;
-    }
     #menu {
-        left: 25px;
+        padding-top: 20px;
+    }
+    #navlinks ul li a {
+        padding-top: 150px;
+    }
+    .s-title [
+        padding-top: 30px;
+    ]
+    #texts {
+        padding-top: 30px;
+    }
+    .hero-btn {
+        padding-top: 15px;
     }
 }
