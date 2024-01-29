@@ -11,14 +11,12 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image:url(../images/banner.avif);
-    background-position: center;
-    background-size: cover;
+    background: url(../images/banner.avif) no-repeat center center/cover;
     position: relative;
 }
 .logo {
     font-size: xx-large;
-    color: aliceblue;
+    color: rgb(62, 110, 153);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 nav {
@@ -38,7 +36,7 @@ nav {
     position: relative;
 }
 .navlinks ul li a {
-    color: white;
+    color: rgb(133, 113, 113);
     text-decoration: none;
     font-size: 13px;
 }
@@ -46,7 +44,53 @@ nav {
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(188, 101, 71);
+    background: rgb(162, 59, 25);
     display: block;
     margin: auto;
+    transition: 0.4s;
+}
+/* hover effect for links*/
+.navlinks ul li:hover::after {
+    width: 100%;
+}
+/*content*/
+.text-box {
+    width: 90%;
+    color: rgb(219, 103, 99);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1 {
+    font-size: 62px;
+}
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 19px;
+    color: rgb(125, 105, 105);
+}
+/*hero button*/
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.8s;
+}
+/* media querries for smaller devices */
+@media(max-width: 700px) {
+    .text-box h1 {
+        font-size: 23px;
+    }
 }
