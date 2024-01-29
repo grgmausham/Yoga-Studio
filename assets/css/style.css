@@ -33,7 +33,7 @@ nav {
 }
 .navlinks ul li {
     list-style: none;
-    display: -webkit-inline-flex;
+    display: inline-block;
     padding: 8px 12px;
     position: relative;
 }
@@ -42,15 +42,11 @@ nav {
     text-decoration: none;
     font-size: 13px;
 }
-.navlinks ul li::after{
+.navlinks ul li::after {
     content: '';
     width: 0%;
     height: 2px;
-    background: #f65555;
+    background: rgb(188, 101, 71);
     display: block;
     margin: auto;
-    transition: 0.3s;
-}
-.navlinks ul li:hover::after{
-    width: 100%;
 }
