@@ -89,6 +89,12 @@ nav {
     background: #f44336;
     transition: 0.8s;
 }
+nav .fa {
+    display: none;
+}
+
+
+
 /* media querries for smaller devices */
 @media(mix-width: 768px) {
     .text-box h1 {
@@ -107,5 +113,12 @@ nav {
         text-align: left;
         z-index: 2;
         color: #fff;
+    }
+    nav .fa {
+        display: block;
+        margin: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 22px;
     }
 }
