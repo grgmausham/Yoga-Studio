@@ -14,7 +14,6 @@
     background-image: url(../images/banner.avif);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 .logo {
     font-size: 230%;
@@ -32,6 +31,7 @@ nav {
 .navlinks {
     flex: 1;
     text-align: right;
+    display: flex;
 }
 .navlinks ul li {
     list-style: none;
@@ -92,18 +92,6 @@ nav {
     background: #f44336;
     transition: 0.8s;
 }
-
-
-
-nav .fa-solid fa-bars{
-    display: none;
-}
-nav .fa-solid fa-xmark {
-    display: none;
-}
-
-
-
 /* media querries for smaller devices */
 @media(mix-width: 700px) {
     .text-box h1 {
@@ -121,15 +109,5 @@ nav .fa-solid fa-xmark {
         right: 0;
         text-align: left;
         z-index: 2;
-    }
-    nav .fa {
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .navlinks ul {
-        padding: 30px;
     }
 }
