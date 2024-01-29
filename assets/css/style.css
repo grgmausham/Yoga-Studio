@@ -18,6 +18,7 @@
     font-size: xx-large;
     color: rgb(62, 110, 153);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    box-shadow: 0 2px 2px #3a3a3a;
 }
 nav {
     display: flex;
@@ -89,8 +90,22 @@ nav {
     transition: 0.8s;
 }
 /* media querries for smaller devices */
-@media(max-width: 700px) {
+@media(mix-width: 768px) {
     .text-box h1 {
         font-size: 23px;
+    }
+    .navlinks ul li {
+        display: block;
+    }
+    .navlinks {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        color: #fff;
     }
 }
