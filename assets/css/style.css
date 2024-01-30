@@ -109,27 +109,51 @@ nav {
     background: #f44336;
     transition: 0.8s;
 }
+/* Footer */
+#social-networks {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+#social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+}
 /* media querries for smaller devices */
 @media (max-width: 770px) {
     .text-box h1 {
         font-size: 20px;
     }
-    #navlinks ul li {
-        display: block;
+    #navlinks {
+        display: flex;
+        padding-top: 25px;
     }
     #menu {
         padding-top: 20px;
     }
-    #navlinks ul li a {
-        padding-top: 150px;
-    }
-    .s-title [
+    .s-title {
         padding-top: 30px;
-    ]
+        font-size: 50px;
+    }
+    
     #texts {
         padding-top: 30px;
     }
     .hero-btn {
         padding-top: 15px;
+    }
+    .logo {
+        padding-left: 20px;
+        font-size:30px
+    }
+    #menubtn {
+        padding-right: 15px;
+    }
+    #navlinks {
+        padding-bottom: 15px;
     }
 }
