@@ -157,3 +157,33 @@ nav {
         padding-bottom: 15px;
     }
 }
+/* media queries for larger devices */
+@media screen and (min-width: 992px) {
+    .logo {
+        font-size: 50px;
+    }
+      .hero-btn {
+          font-size: 30px;
+          margin-top: 20px;
+      }
+     #texts {
+         font-size: 30px;
+         margin-top:15px;
+     }
+    .s-title {
+        font-size: 35px;
+    }
+    #menubtn {
+        font-size: 40px;
+    }
+    #navlinks {
+        font-size: 25px;
+        padding-top: 20px;
+}
+.hero-btn:hover {
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.8s;
+}
+
+}
