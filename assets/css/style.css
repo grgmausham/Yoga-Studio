@@ -90,7 +90,7 @@ nav {
 .text-box p {
     margin: 10px 0 40px;
     font-size: 19px;
-    color: rgb(125, 105, 105);
+    color: rgb(118, 12, 12);
 }
 /*hero button*/
 .hero-btn{
@@ -206,6 +206,12 @@ footer p {
     padding-bottom: 20px;
     padding-top: 70px;
 }
+/* course-btn */
+.course-btn {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
 /* Sign Up */
 .signup h1 {
     font-size: 230%;
@@ -269,7 +275,6 @@ footer p {
 .contact {
     width: 80%;
     margin: auto;
-    text-align: center;
 }
 .contact-us {
     flex-basis: 48%;
