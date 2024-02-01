@@ -153,9 +153,11 @@ nav {
 }
 .about-col h1 {
     padding-top: 0;
+    font-size: 45px;
 }
 .about-col p {
     padding: 15px 0 25px;
+    font-size: 25px;
 }
 
 /*red-btn styles */
