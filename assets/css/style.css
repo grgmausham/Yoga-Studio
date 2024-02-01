@@ -201,10 +201,12 @@ footer p {
 }
 .course p {
     padding-bottom: 10px;
+    font-size: 25px;
 }
 .course h3 {
     padding-bottom: 20px;
     padding-top: 70px;
+    font-size: 35px;
 }
 /* course-btn */
 .course-btn {
@@ -286,7 +288,7 @@ footer p {
     margin-bottom: 40px;
 }
 .contact-us div p {
-    padding: 0;
+    margin-left: 20px;
 }
 .contact-us div h5 {
     font-size: 20px;
