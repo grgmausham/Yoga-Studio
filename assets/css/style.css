@@ -117,6 +117,12 @@ nav {
     justify-content: space-evenly;
     list-style-type: none;
 }
+footer p {
+    text-align: center;
+    color: #474343;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
 
 #social-networks i {
     font-size: 160%;
@@ -263,6 +269,7 @@ nav {
 .contact {
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 .contact-us {
     flex-basis: 48%;
