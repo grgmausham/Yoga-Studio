@@ -249,13 +249,18 @@ nav {
 }
 .location iframe {
     width: 100%;
+    border-radius: 5px;
+}
+.location h2 {
+    text-align: center;
+    padding-bottom: 15px;
+    color: #383838;
 }
 
 /* contact */
 .contact {
     width: 80%;
     margin: auto;
-    display: flex;
 }
 .contact-us {
     flex-basis: 48%;
