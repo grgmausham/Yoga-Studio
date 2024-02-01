@@ -255,6 +255,7 @@ nav {
 .contact {
     width: 80%;
     margin: auto;
+    display: flex;
 }
 .contact-us {
     flex-basis: 48%;
